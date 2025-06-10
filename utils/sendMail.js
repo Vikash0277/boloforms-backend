@@ -13,7 +13,7 @@ const sendSigningEmail = async ({ to, documentId }) => {
     },
   });
 
-  const link = `${process.env.BASE_URL}/sign/${documentId}/${encodeURIComponent(to)}`;
+  const link = `$https://boloforms-frontend.vercel.app/sign/${documentId}/${encodeURIComponent(to)}`;
 
   const mailOptions = {
     from: `"BoloSign" <${process.env.EMAIL_USER}>`,
